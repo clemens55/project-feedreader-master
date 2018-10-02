@@ -55,7 +55,7 @@ $(function() {
     });
 
 
-    /* DONE: Write a new test suite named "The menu" */
+    /* DONE: Write a new test suite named 'The menu' */
     describe('The menu', function() {
         
         /* DONE: Write a test that ensures the menu element is
@@ -84,7 +84,7 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true); 
         });
     });
-    /* DONE: Write a new test suite named "Initial Entries" */
+    /* DONE: Write a new test suite named 'Initial Entries' */
     describe('Initial Entries', function() {
         
         /* DONE: Write a test that ensures when the loadFeed
@@ -99,13 +99,13 @@ $(function() {
         });
 
         it('are loaded', function() {
-            var result = $(".feed .entry");
+            var result = $('.feed .entry');
             expect(result[0]).toBeDefined();
         });
     });
         
-    /* DONE: Write a new test suite named "New Feed Selection" */
-    describe("New Feed Selection", function(){
+    /* DONE: Write a new test suite named 'New Feed Selection' */
+    describe('New Feed Selection', function(){
         
         /* DONE: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
@@ -118,10 +118,10 @@ $(function() {
         beforeEach(function(done) {
             //load first feed
             loadFeed(0 ,function() {
-              feed0 = window.document.querySelector(".feed").innerHTML;
+              feed0 = window.document.querySelector('.feed').innerHTML;
             //load second feed
               loadFeed(1, function() {
-                feed1 = window.document.querySelector(".feed").innerHTML;
+                feed1 = window.document.querySelector('.feed').innerHTML;
                 done();
               });
             });
@@ -132,7 +132,5 @@ $(function() {
             done();
         });
     });
-
-        
     
 }());
